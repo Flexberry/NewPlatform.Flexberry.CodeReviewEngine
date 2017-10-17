@@ -136,14 +136,17 @@
                 var teamSlice = teamSlices.FirstOrDefault(n => n.StartDate <= creationDate && n.EndDate >= creationDate);
 
                 if (teamSlice == null)
-                    throw new InvalidOperationException("Невозможно подобрать команду под указанный диапазон дат.");
+                {
+                    LogService.LogWarn($"Невозможно подобрать команду под указанный диапазон дат. Changeset ${changeset.ChangesetId}");
+                    continue;
+                }
 
                 var identity = identityManagementService.ReadIdentity(
                     IdentitySearchFactor.AccountName, changeset.Committer, MembershipQuery.None, ReadIdentityOptions.None);
                 if (identity == null)
                 {
                     throw new InvalidOperationException(
-                        string.Format("Не удалось получить сведения по логину {0}.", changeset.Committer));
+                        $"Не удалось получить сведения по логину {changeset.Committer}.");
                 }
 
                 /* Проведение имперсонализации: 
