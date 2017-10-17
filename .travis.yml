@@ -1,2 +1,2 @@
 language: csharp
-solution: CodeReviewEngine.ASPNET Application.sln
+solution: CodeReviewEngine.sln

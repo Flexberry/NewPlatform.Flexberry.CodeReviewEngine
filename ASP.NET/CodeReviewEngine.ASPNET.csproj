@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IIS.CodeReviewEngine</RootNamespace>
-    <AssemblyName>CodeReviewEngine.ASP.NET Application</AssemblyName>
+    <AssemblyName>CodeReviewEngine.ASPNET</AssemblyName>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
