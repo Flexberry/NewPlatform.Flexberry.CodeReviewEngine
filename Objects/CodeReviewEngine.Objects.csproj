@@ -5,7 +5,7 @@
     <ProjectGuid>{BCFE1705-D445-4FE1-94B6-8BAEB84F2760}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <AssemblyName>CodeReviewEngine(Objects)</AssemblyName>
+    <AssemblyName>CodeReviewEngine.Objects</AssemblyName>
     <OutputType>Library</OutputType>
     <RootNamespace>IIS.CodeReviewEngine</RootNamespace>
     <FileUpgradeFlags>
@@ -25,7 +25,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DocumentationFile>CodeReviewEngine(Objects).xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\CodeReviewEngine.Objects.xml</DocumentationFile>
     <DebugSymbols>true</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>
@@ -47,7 +47,7 @@
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
     <DefineConstants>TRACE</DefineConstants>
-    <DocumentationFile>CodeReviewEngine(Objects).xml</DocumentationFile>
+    <DocumentationFile>bin\Release\CodeReviewEngine.Objects.xml</DocumentationFile>
     <DebugSymbols>false</DebugSymbols>
     <FileAlignment>4096</FileAlignment>
     <NoStdLib>false</NoStdLib>

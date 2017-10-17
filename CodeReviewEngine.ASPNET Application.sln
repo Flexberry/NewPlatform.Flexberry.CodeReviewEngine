@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReviewEngine(ASP.NET Application)", "ASP.NET\CodeReviewEngine(ASP.NET Application).csproj", "{84566ED2-B241-4784-9835-DD5EA5AF0A7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReviewEngine.ASP.NET Application", "ASP.NET\CodeReviewEngine.ASP.NET Application.csproj", "{84566ED2-B241-4784-9835-DD5EA5AF0A7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReviewEngine(Objects)", "Objects\CodeReviewEngine(Objects).csproj", "{BCFE1705-D445-4FE1-94B6-8BAEB84F2760}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReviewEngine.Objects", "Objects\CodeReviewEngine.Objects.csproj", "{BCFE1705-D445-4FE1-94B6-8BAEB84F2760}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodereviewWorkItemGenerator", "CodereviewWorkItemGenerator\CodereviewWorkItemGenerator.csproj", "{2B87FFF0-CFD3-4276-87A3-03BC561B6747}"
 EndProject
@@ -52,7 +52,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Logging.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Logging.Database.5.0.505.0\lib\NET35
 		SolutionGuid = {B7B520BC-CAAE-4FA3-99A1-5437A1CCB985}
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35;packages\EnterpriseLibrary.Common.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Data.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Logging.5.0.505.0\lib\NET35;packages\EnterpriseLibrary.Logging.Database.5.0.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal

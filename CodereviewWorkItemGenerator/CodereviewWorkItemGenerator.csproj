@@ -391,9 +391,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Objects\CodeReviewEngine%28Objects%29.csproj">
+    <ProjectReference Include="..\Objects\CodeReviewEngine.Objects.csproj">
       <Project>{bcfe1705-d445-4fe1-94b6-8baeb84f2760}</Project>
-      <Name>CodeReviewEngine%28Objects%29</Name>
+      <Name>CodeReviewEngine.Objects</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

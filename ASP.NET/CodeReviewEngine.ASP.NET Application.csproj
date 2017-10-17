@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IIS.CodeReviewEngine</RootNamespace>
-    <AssemblyName>CodeReviewEngine(ASP.NET Application)</AssemblyName>
+    <AssemblyName>CodeReviewEngine.ASP.NET Application</AssemblyName>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
@@ -635,9 +635,9 @@
       <HintPath>System.Workflow.Runtime</HintPath>
       <Private>True</Private>
     </Reference>
-    <ProjectReference Include=".\..\\Objects\CodeReviewEngine(Objects).csproj">
+    <ProjectReference Include="..\Objects\CodeReviewEngine.Objects.csproj">
       <Project>{BCFE1705-D445-4FE1-94B6-8BAEB84F2760}</Project>
-      <Name>CodeReviewEngine(Objects)</Name>
+      <Name>CodeReviewEngine.Objects</Name>
     </ProjectReference>
     <ProjectReference Include=".\..\\Objects\CodeReviewEngine(Objects).csproj">
       <Project>{E88E82E1-2491-4D78-B788-ABBF3AF7BCB2}</Project>
