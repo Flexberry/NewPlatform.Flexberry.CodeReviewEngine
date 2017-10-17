@@ -1,0 +1,32 @@
+﻿@import '../../../BaseTheme/Controls/Buttons/Buttons.less';
+
+/**
+ * Файл визуального оформления кнопок базовой темы.
+ */
+
+
+.@{buttonClass},
+.@{wolvToolbarBtnClass} {
+    cursor: pointer;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    border-color: @buttonBorderColor;
+    color: @buttonTextColor;
+    .border-radius(@buttonRadius);
+
+    &:focus {
+        color: @buttonTextColor;
+        outline: 0;
+    }
+}
+
+#popup_panel input[type="button"] {
+    min-width: 75px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+@import (reference) "_Variables.less";

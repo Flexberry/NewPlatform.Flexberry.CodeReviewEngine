@@ -1,0 +1,60 @@
+﻿@import "../../../BaseTheme/Controls/WebObjectListView/Pager.less";
+
+/* Файл визуального оформления пейджера. */
+
+.@{wolvPagerClass} {
+    &.@{wolvPagerTopClass} {
+        margin: 0;
+
+        input {
+            width: 48px;
+        }
+    }
+
+    &.@{wolvPagerBottomClass} {
+        width: 100%;
+
+        .@{wolvPagerItemsOnPageClass} {
+            float: right;
+        }
+
+        input {
+            width: 48px;
+        }
+    }
+}
+/* #region Неактивная ссылка в панели навигации. */
+.@{wolvPagerNavigationDisabledClass} {
+    border-color: @wolvPageBtnDisabledBorderColor;
+    color: @wolvPageBtnDisabledColor;
+    background: @wolvPageBtnDisabledBackgroundColor;
+    cursor: not-allowed;
+}
+/* #endregion */
+.@{wolvPagerNavigationSeparatorClass} {
+    display: none;
+}
+
+.@{wolvPagerGoToPageClass},
+.@{wolvPagerInformationClass},
+.@{wolvPagerItemsOnPageClass} {
+    margin: 0 8px;
+}
+
+.@{wolvPagerGoToPageLabelClass},
+.@{wolvPagerInformationClass} {
+    padding: 4px;
+}
+
+
+.@{wolvPagerTextFieldClass} {
+    padding: 0;
+    border: none;
+
+    > input {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+@import "_Settings.less";

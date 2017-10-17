@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeReviewEngine(Objects)</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.CodeReviewEngine.Metric">
+            <summary>
+            Справочник метрик кода.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Metric.Name">
+            <summary>
+            Название.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.Metric.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Metric.Views.MetricE">
+            <summary>
+            "MetricE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Metric.Views.MetricL">
+            <summary>
+            "MetricL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.MetricValue">
+            <summary>
+            Значения метрик кода. По этому объекту данных будем строить графики.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.MetricValue.Date">
+            <summary>
+            Дата.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.MetricValue.Value">
+            <summary>
+            Значение.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.MetricValue.Metric">
+            <summary>
+            Значения метрик кода. По этому объекту данных будем строить графики.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.MetricValue.TFSProject">
+            <summary>
+            Значения метрик кода. По этому объекту данных будем строить графики.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.MetricValue.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.MetricValue.Views.MetricValueE">
+            <summary>
+            "MetricValueE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.MetricValue.Views.MetricValueL">
+            <summary>
+            "MetricValueL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TeamForProgrammer">
+            <summary>
+            Команда, в которой работает программист. Нужна для определения набора данных, которые интересны программисту.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamForProgrammer.Team">
+            <summary>
+            Команда, в которой работает программист. Нужна для определения набора данных, которые интересны программисту.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamForProgrammer.TFSProgrammer">
+            <summary>
+            мастеровая ссылка на шапку IIS.CodeReviewEngine.TFSProgrammer.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TeamForProgrammer.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamForProgrammer.Views.TeamForProgrammerE">
+            <summary>
+            "TeamForProgrammerE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.DetailArrayOfTeamForProgrammer">
+            <summary>
+            Detail array of TeamForProgrammer.
+            </summary>
+        </member>
+        <member name="M:IIS.CodeReviewEngine.DetailArrayOfTeamForProgrammer.#ctor(IIS.CodeReviewEngine.TFSProgrammer)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type TeamForProgrammer by index.
+            </summary>
+            <summary>
+            Adds object with type TeamForProgrammer.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TeamSlice">
+            <summary>
+            Интервал работы команды. Эта сущность задаёт правила, по которым формируется задание на проверку кода. Задаются временные границы и участники, которые должны выполнять проверку кода.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamSlice.StartDate">
+            <summary>
+            Начальная дата.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamSlice.EndDate">
+            <summary>
+            Конечная дата.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamSlice.Team">
+            <summary>
+            Интервал работы команды. Эта сущность задаёт правила, по которым формируется задание на проверку кода. Задаются временные границы и участники, которые должны выполнять проверку кода.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamSlice.Reviewers">
+            <summary>
+            Интервал работы команды. Эта сущность задаёт правила, по которым формируется задание на проверку кода. Задаются временные границы и участники, которые должны выполнять проверку кода.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TeamSlice.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamSlice.Views.ProjectForReview">
+            <summary>
+            "ProjectForReview" view.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamSlice.Views.TeamSliceE">
+            <summary>
+            "TeamSliceE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TeamSlice.Views.TeamSliceL">
+            <summary>
+            "TeamSliceL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.Team">
+            <summary>
+            Команда разработчиков. Команда может работать одновременно с несколькими проектами в TFS.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Team.Name">
+            <summary>
+            Название команды.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Team.Projects">
+            <summary>
+            Команда разработчиков. Команда может работать одновременно с несколькими проектами в TFS.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.Team.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Team.Views.TeamE">
+            <summary>
+            "TeamE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Team.Views.TeamL">
+            <summary>
+            "TeamL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.Reviewer">
+            <summary>
+            Проверяющий программист.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Reviewer.TFSProgrammer">
+            <summary>
+            Проверяющий программист.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Reviewer.TeamSlice">
+            <summary>
+            мастеровая ссылка на шапку IIS.CodeReviewEngine.TeamSlice.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.Reviewer.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.Reviewer.Views.ReviewerE">
+            <summary>
+            "ReviewerE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.DetailArrayOfReviewer">
+            <summary>
+            Detail array of Reviewer.
+            </summary>
+        </member>
+        <member name="M:IIS.CodeReviewEngine.DetailArrayOfReviewer.#ctor(IIS.CodeReviewEngine.TeamSlice)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type Reviewer by index.
+            </summary>
+            <summary>
+            Adds object with type Reviewer.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSChangeSet">
+            <summary>
+            Набор изменений из TFS.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Number">
+            <summary>
+            Номер
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Reviewed">
+            <summary>
+            Проверен
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Comment">
+            <summary>
+            Комментарий к набору изменений
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Date">
+            <summary>
+            Дата
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.ReviewerNote">
+            <summary>
+            Комментарий проверяющего
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Notify">
+            <summary>
+            Уведомление для автора
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Accept">
+            <summary>
+            Автор прореагировал на уведомление
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.ChangesetAuthor">
+            <summary>
+            Набор изменений из TFS.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Reviewer">
+            <summary>
+            Набор изменений из TFS.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.TeamSlice">
+            <summary>
+            Набор изменений из TFS.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSChangeSet.Views">
+            <summary>
+            Class views container
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Views.ChangeSetE">
+            <summary>
+            "ChangeSetE" view
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Views.ChangeSetL">
+            <summary>
+            "ChangeSetL" view
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Views.TFSChangeSetE">
+            <summary>
+            "TFSChangeSetE" view
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSChangeSet.Views.TFSChangeSetL">
+            <summary>
+            "TFSChangeSetL" view
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSCommonCollectionContsntans">
+            <summary>
+            Константы используемые в TFS-шаблонах коллекции TFS-проектов Common.
+            </summary>
+        </member>
+        <member name="F:IIS.CodeReviewEngine.TFSCommonCollectionContsntans.ResponseWorkItemType">
+            <summary>
+            Тип WorkItem'а для получения ответа о проверке кода. Значение константы совпадает с WORKITEMTYPE.name из TFS-шаблона.
+            </summary>
+        </member>
+        <member name="F:IIS.CodeReviewEngine.TFSCommonCollectionContsntans.RequestWorkItemType">
+            <summary>
+            Тип WorkItem'а для запроса проверки кода. Значение константы совпадает с WORKITEMTYPE.name из TFS-шаблона.
+            </summary>
+        </member>
+        <member name="F:IIS.CodeReviewEngine.TFSCommonCollectionContsntans.StateWorkItemCreation">
+            <summary>
+            Состояние вновь созданного WorkItem'а. Значение константы совпадает с первым из статусов в списке STATES из TFS-шаблона.
+            </summary>
+        </member>
+        <member name="F:IIS.CodeReviewEngine.TFSCommonCollectionContsntans.StateWorkItemClosed">
+            <summary>
+            Состояние закрытого WorkItem'а. Значение константы совпадает со вторым статусом в списке STATES из TFS-шаблона.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSProgrammer">
+            <summary>
+            Программист. Данные берутся из TFS.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProgrammer.Name">
+            <summary>
+            Имя.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProgrammer.Login">
+            <summary>
+            Логин.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProgrammer.Domain">
+            <summary>
+            Домен.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProgrammer.Teams">
+            <summary>
+            Программист. Данные берутся из TFS.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSProgrammer.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProgrammer.Views.TFSProgrammerE">
+            <summary>
+            "TFSProgrammerE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProgrammer.Views.TFSProgrammerL">
+            <summary>
+            "TFSProgrammerL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSProject">
+            <summary>
+            Проект из TFS.
+            </summary>
+        </member>
+        <member name="M:IIS.CodeReviewEngine.TFSProject.GetProjectName">
+            <summary>
+            Получить наименование проекта в TFS.
+            </summary>
+            <returns>Наименование проекта в TFS.</returns>
+        </member>
+        <member name="M:IIS.CodeReviewEngine.TFSProject.GetProjectCollectionUrl">
+            <summary>
+            Получить Url коллекции проектов в TFS.
+            </summary>
+            <returns>Url коллекции проектов в TFS.</returns>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProject.Name">
+            <summary>
+            Название.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProject.LastCheckDate">
+            <summary>
+            Дата последней проверки проекта. Проставляется автоматически.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProject.WorkItemAreaPath">
+            <summary>
+            WorkItemAreaPath.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProject.WorkItemIterationPath">
+            <summary>
+            WorkItemIterationPath.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSProject.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProject.Views.TFSProjectE">
+            <summary>
+            "TFSProjectE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProject.Views.TFSProjectL">
+            <summary>
+            "TFSProjectL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSProjectForReview">
+            <summary>
+            Проект TFS для проверки.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProjectForReview.TFSProject">
+            <summary>
+            Проект TFS для проверки.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProjectForReview.Team">
+            <summary>
+            мастеровая ссылка на шапку IIS.CodeReviewEngine.Team.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.TFSProjectForReview.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.CodeReviewEngine.TFSProjectForReview.Views.TFSProjectForReviewE">
+            <summary>
+            "TFSProjectForReviewE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.CodeReviewEngine.DetailArrayOfTFSProjectForReview">
+            <summary>
+            Detail array of TFSProjectForReview.
+            </summary>
+        </member>
+        <member name="M:IIS.CodeReviewEngine.DetailArrayOfTFSProjectForReview.#ctor(IIS.CodeReviewEngine.Team)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type TFSProjectForReview by index.
+            </summary>
+            <summary>
+            Adds object with type TFSProjectForReview.
+            </summary>
+        </member>
+    </members>
+</doc>

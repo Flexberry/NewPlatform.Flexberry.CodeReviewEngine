@@ -1,0 +1,163 @@
+﻿/**
+ * Стили базовой темы.
+ * Содержимое модальных окон.
+ */
+
+
+@import (reference) '_Variables.less';
+
+.@{modalWindowContentsClass} {
+    form {
+        overflow-x: hidden;
+        margin: 0 auto;
+        width: 675px;
+    }
+    // Врапер содержимого модального окна.
+    .@{modalWindowWrapClass} {
+        margin-bottom: 80px;
+        // Заголовок таблицы модального окна.
+        .@{modalWindowTableCaptionClass} {
+            width: 100%;
+            white-space: nowrap;
+
+            .@{modalWindowTableItemClass} {
+                display: inline-block;
+                padding: 5px;
+                height: 16px;
+                vertical-align: middle;
+                text-align: center;
+                .@{selectAllBtnClass},
+                .@{resetSortBtnClass} {
+                    .font-icon-style();
+                    cursor: pointer;
+                    color: @tableToolbarHeaderBtnColor;
+                }
+
+                &.@{checkBoxItemClass} {                 
+                    .@{selectAllBtnClass} {
+                    
+                        &:before {
+                            content: "\f046";
+                        }
+
+                        &:hover {
+                            
+                            opacity: 0.9;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &.@{captionResetSortClass} { 
+                    .@{resetSortBtnClass} {
+
+                        &:before {
+                            content: "\f0dc";
+                        }
+
+                        &:hover {
+                            opacity: 0.9;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Футер модального окна.
+    .@{modalWindowFooterClass} {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 8px;
+
+        .@{footerSettingsNameClass} {
+            padding-right: 5px;
+            padding-left: 8px;
+        }
+
+        #@{footerSettingsNameControlId} {
+            margin-right: 10px;
+        }
+
+        .@{footerExportSettingClass} {
+            padding: 5px;
+        }
+
+        .@{footerOkBtnClass} {
+            float: right;            
+            margin-right: 10px;
+        }
+    }
+}
+span.@{hidePriorityClass} {
+    display: none;
+}
+
+#sortable {
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: block;
+        white-space: nowrap;
+        cursor: move;
+    }
+    .@{checkBoxItemClass},
+    .@{sortOrderWrapperClass},
+    .@{sortPriorityWrapperClass},
+    .@{propertyNameWrapperClass},
+    .@{sortBtnsClass} {
+        display: inline-block;
+        border-right: 1px solid;
+        vertical-align: bottom;
+        text-align: center;
+    }
+    .@{checkBoxItemClass} {
+        height: 40px;
+
+        input {
+            margin: 0;
+            height: inherit;
+        }
+    }
+
+    .@{sortOrderWrapperClass} {
+        height: 40px;
+
+        .@{sortOrderClass} {
+            margin-top: 5px;
+            width: 64px;
+            vertical-align: top;
+        }
+    }
+     .@{sortPriorityWrapperClass} {
+        height: 40px;
+
+        .@{hidePriorityClass} {
+            visibility: hidden;
+        }
+
+        .@{sortPriorityClass} {
+            margin-top: 5px;
+            width: 64px;
+            vertical-align: top;
+            text-align: right;
+        }
+    }
+      .@{propertyNameWrapperClass} {
+        height: 40px;
+
+        .@{propertyNameClass} {
+            margin-top: 5px;
+            width: 160px;
+        }
+    }
+
+    .@{sortBtnsClass} {
+        input {
+            margin: 0 2px;
+        }
+    }
+}

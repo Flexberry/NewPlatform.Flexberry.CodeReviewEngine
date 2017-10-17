@@ -1,0 +1,30 @@
+﻿/**
+ * Стили базовой темы.
+ * Контрол ShowHideDiv. 
+ */
+
+@import (reference) '_Variables.less';
+
+
+.@{showHideDivIconClass} {
+    .font-icon-style();
+
+    &:before {
+        margin-left: 5px;
+        font-size: @showHideDivIconSize;
+
+        .@{showHideDivExpandedClass} & {
+            content: "\f139";
+            color: @showHideDivIconCloseColor;
+        }
+
+        .@{showHideDivCollapsedClass} & {
+            content: "\f13a";
+            color: @showHideDivIconOpenColor;
+        }
+    }
+}
+
+.@{showHideDivLinkClass} {
+    .border-box();
+}

@@ -1,0 +1,127 @@
+﻿/**
+ * Стили базовой темы.
+ * Модальные окна с предупреждениями.
+ */
+
+@import (reference) '_Variables.less';
+
+/**
+ * Фон за модальным окном.
+ */
+#@{alertBackgroundId} {
+    background-color: @backgroundModalWindowColor !important;
+    -moz-opacity: 0.45 !important;
+    opacity: 0.45 !important;
+    filter: alpha(opacity=45);
+}
+
+/** 
+ * Контент модального окна.
+ */
+#@{alertContentId} {
+    padding: 1em 1.75em;
+    background-repeat: no-repeat;
+    background-position: 16px 16px;
+
+    /** 
+     * Тип сообщения alert.
+     */
+    &.@{alertTypeClass} {
+        background-image: url(Images/info.gif);
+    }
+   
+    /** 
+     * Тип сообщения confirm.
+     */
+    &.@{confirmTypeClass} {
+        background-image: url(Images/important.gif);
+    }
+    
+    /** 
+     * Тип сообщения prompt.
+     */
+    &.@{promptTypeClass} {
+        background-image: url(Images/help.gif);
+    }
+   
+    /**
+     * Сообщение в модальном окне.
+     */
+    #@{alertMessageId} {
+        padding-left: 48px;
+    }
+
+    /** 
+     * Панель в модальном окне.
+     */
+    #@{alertPanelId} {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+
+#popup_prompt {
+    margin: 0.5em 0;
+}
+#@{alertContainerId} {
+    #@{alertTitleId} {
+        margin: 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.75em;
+    }
+}
+
+
+/** 
+ * Сообщения "Сохранение...", "Изменение отображения колонок..." и т.д.. 
+ */
+
+.loading() {
+    display: inline-block;
+    background-image: url("../ModalWindows/Images/loading.gif");
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 31px;
+    margin-top: 25px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#hiddenContent {
+    display: none;    
+}
+
+#TB_saveDialog {
+    text-align: center;
+    margin: 35px;
+    font-size: 24px;
+    line-height: normal;
+
+    #ImgLoading {
+        .loading();
+        margin-top: 0;
+    }
+}
+
+#TB_ajaxContent {
+
+    .hidden-content-messages {
+        display: table;
+        height: 100%;
+        font-size: 24px;
+
+        #ccLoadingImage {
+            .loading();
+        }
+
+        #thickBoxText {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
+
+
